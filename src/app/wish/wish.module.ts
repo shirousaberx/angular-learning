@@ -10,6 +10,7 @@ import { WishFilterComponent } from './wish-filter/wish-filter.component';
 import { WishListItemComponent } from './wish-list-item/wish-list-item.component';
 
 import { WishService } from './wish.service';
+import { WishComponent } from './wish.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { WishService } from './wish.service';
     AddWishFormComponent,
     WishFilterComponent,
     WishListItemComponent,
+    WishComponent,
   ],
   imports: [
     CommonModule,
@@ -25,10 +27,7 @@ import { WishService } from './wish.service';
     HttpClientModule
   ],
   exports: [
-    WishListComponent,
-    AddWishFormComponent,
-    WishFilterComponent,
-    WishListItemComponent,
+    WishComponent,
   ],
   providers: [
     WishService // put in app.module.ts to make it available to other childs aside from WishModule
