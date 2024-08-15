@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders, HttpParams } from '@angular/common/http';
 import { WishItem } from 'src/shared/models/wishItem';
 import { catchError, throwError } from 'rxjs';
-import { WishModule } from './wish.module';
 
 @Injectable()
 export class WishService {

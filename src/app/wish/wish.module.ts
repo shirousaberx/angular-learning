@@ -31,7 +31,7 @@ import { WishService } from './wish.service';
     WishListItemComponent,
   ],
   providers: [
-    WishService
+    WishService // put in app.module.ts to make it available to other childs aside from WishModule
   ]
 })
 export class WishModule { }

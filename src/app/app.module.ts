@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { WishModule } from './wish/wish.module';
-import { WishService } from './wish/wish.service';
 
 
 @NgModule({
@@ -13,9 +12,7 @@ import { WishService } from './wish/wish.service';
   imports: [
     WishModule
   ],
-  providers: [
-    WishService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
