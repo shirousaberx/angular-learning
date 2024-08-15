@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { WishModule } from './wish/wish.module';
+import { ContactModule } from './contact/contact.module';
 
 
 @NgModule({
@@ -10,8 +11,9 @@ import { WishModule } from './wish/wish.module';
     AppComponent,
   ],
   imports: [
-    WishModule
-  ],
+    WishModule,
+    ContactModule
+],
   providers: [],
   bootstrap: [AppComponent]
 })
